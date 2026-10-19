@@ -1,0 +1,11 @@
+# İşletim sistemi
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editör
+.vscode/
+.idea/
+
+# Bağımlılık klasörleri (bu projede yok ama ileride lazım olabilir)
+node_modules/

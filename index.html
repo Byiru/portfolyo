@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kişisel portfolyo sitem — hakkımda ve yeteneklerim." />
+  <title>Portfolyo | Adın Soyadın</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">&lt;Adın /&gt;</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#yetenekler">Yetenekler</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======= HERO / HAKKIMDA ======= -->
+    <section class="hero" id="hakkimda">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__hi">Merhaba, ben</p>
+          <h1 class="hero__name">Adın <span>Soyadın</span></h1>
+          <h2 class="hero__title">Yazılım Geliştirici</h2>
+          <p class="hero__desc">
+            Öğrenmeye ve üretmeye odaklanan bir geliştiriciyim. Web teknolojileriyle
+            kullanıcı deneyimini önemseyen, temiz ve sürdürülebilir kodlar yazıyorum.
+            Yeni teknolojiler denemeyi ve küçük fikirleri gerçek projelere dönüştürmeyi
+            seviyorum.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#yetenekler" class="btn btn--primary">Yeteneklerim</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub Profilim</a>
+          </div>
+
+          <ul class="hero__stats">
+            <li><strong>10+</strong><span>Proje</span></li>
+            <li><strong>2+</strong><span>Yıl Deneyim</span></li>
+            <li><strong>∞</strong><span>Öğrenme İsteği</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="hero__code"><code><span class="c-key">const</span> <span class="c-var">gelistirici</span> = {
+  isim: <span class="c-str">"Adın"</span>,
+  sehir: <span class="c-str">"Türkiye"</span>,
+  tutku: <span class="c-str">"kod yazmak"</span>,
+  acikMiktar: <span class="c-num">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= YETENEKLER ======= -->
+    <section class="skills" id="yetenekler">
+      <div class="container">
+        <div class="section-head">
+          <h2>Yetenekler</h2>
+          <p>Sürekli geliştirdiğim teknolojiler ve araçlar.</p>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Her satır: data-level = %0-100 -->
+          <div class="skill" data-level="90">
+            <div class="skill__top"><span>HTML5</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+
+          <div class="skill" data-level="85">
+            <div class="skill__top"><span>CSS3 / Sass</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+
+          <div class="skill" data-level="80">
+            <div class="skill__top"><span>JavaScript (ES6+)</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+
+          <div class="skill" data-level="70">
+            <div class="skill__top"><span>React</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+
+          <div class="skill" data-level="65">
+            <div class="skill__top"><span>Node.js</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+
+          <div class="skill" data-level="75">
+            <div class="skill__top"><span>Git / GitHub</span><span class="skill__pct">0%</span></div>
+            <div class="skill__bar"><div class="skill__fill"></div></div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Vite</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Agile / Scrum</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Adın Soyadın — Kodla kal, öğrenmeye devam et.</p>
+      <div class="footer__links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ornek@mail.com">E-posta</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
